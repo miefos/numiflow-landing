@@ -1,0 +1,134 @@
+{
+  "hero": {
+    "title": "AI Grāmatvedība",
+    "subtitle": "Bez piepūles automatizācija, netraucēta AI palīdzība",
+    "description": "Automatizējiet savu grāmatvedību un optimizējiet darba procesus ar netraucētu AI automatizāciju.",
+    "cta": "Sākt darbu",
+    "learnMore": "Uzzināt vairāk"
+  },
+  "nav": {
+    "features": "Funkcijas",
+    "solutions": "Risinājumi",
+    "pricing": "Cenas",
+    "onboarding": "Ieviešana",
+    "contact": "Kontakti"
+  },
+  "features": {
+    "title": "Spēcīgas funkcijas mūsdienu grāmatvedībai",
+    "automatedAccounting": {
+      "title": "Automatizētā grāmatvedība",
+      "description": "Ietaupiet dienas manuāla darba katru mēnesi ar 90%+ automātiski apstrādātiem žurnāla ierakstiem. Izvelciet datus no rēķiniem, veidojiet transakcijas un saskaņojiet kontus bez piepūles."
+    },
+    "aiCopilot": {
+      "title": "AI Asistents",
+      "description": "Uzdodiet jebkurus jautājumus par saviem finanšu datiem, izmantojot dabisko valodu. Veidojiet pielāgotus atskaites, analizējiet tendences un iegūstiet ieskatus no savām transakcijām un dokumentiem."
+    },
+    "accountsPayable": {
+      "title": "Kreditoru automatizācija",
+      "description": "Apstrādājiet rēķinus pa e-pastu, augšupielādējiet atsevišķi vai vairākus uzreiz - atbalstot visas valodas un formātus. No skenētiem PDF līdz eRēķiniem un PEPPOL."
+    },
+    "bankReconciliation": {
+      "title": "Bankas izlīdzināšana",
+      "description": "Automātiski saskaņojiet rēķinus ar bankas maksājumiem, izmantojot inteliģentu modeļu atpazīšanu. Sasniedziet 95%+ automatizāciju izlīdzināšanas procesā."
+    },
+    "duplicateDetection": {
+      "title": "Dublikātu un anomāliju atklāšana",
+      "description": "Aizsargājiet savu uzņēmumu ar progresīvu modeļu atpazīšanu, kas identificē dublikātus un anomālijas. Atklājiet iespējamus krāpniecības gadījumus un kļūdas pirms tās ietekmē jūsu finanses."
+    },
+    "approvalWorkflows": {
+      "title": "Apstiprināšanas darba procesi",
+      "description": "Izstrādājiet pielāgotas apstiprināšanas ķēdes ar vairāku līmeņu autorizāciju un uz lomām balstītu maršrutēšanu. Apstipriniet ceļā ar mobilo atbalstu."
+    },
+    "accountsReceivable": {
+      "title": "Debitoru pārvaldība",
+      "description": "Veidojiet profesionālus rēķinus, automatizējiet maksājumu atgādinājumus un sekojiet līdzi nesamaksātajiem atlikumiem. Iestatiet atkārtotus rēķinus ar viedām plānošanas un maksājumu izsekošanas funkcijām."
+    },
+    "insightsAnalytics": {
+      "title": "Ieskati un analītika",
+      "description": "Iegūstiet tūlītēju redzamību naudas plūsmā, izdevumos un ieņēmumu tendencēs ar dinamiskām informācijas panelēm. Veidojiet automātiskus kopsavilkumus un finanšu ieskatus, kas pielāgoti jūsu biznesam."
+    },
+    "documentManagement": {
+      "title": "Viedā dokumentu pārvaldība",
+      "description": "Augšupielādējiet un organizējiet visus biznesa dokumentus - līgumus, kvītis, bankas izrakstus un citus. Automātiski izvelciet galveno informāciju un padariet visu meklējamu pēc satura."
+    },
+    "periodClosing": {
+      "title": "Perioda slēgšanas automatizācija",
+      "description": "Optimizējiet mēneša beigu un gada beigu procesus ar automatizētām kontrolsarakstiem un darba plūsmām. Apstrādājiet priekšapmaksas, uzkrājumus un atliktos ieņēmumus ar inteliģentu periodu sadalījumu."
+    },
+    "apiIntegration": {
+      "title": "Uzņēmuma API integrācija",
+      "description": "Netraucēti savienojieties ar jebkuru ERP, HR sistēmu vai biznesa lietojumprogrammu, izmantojot mūsu OpenAPI saderīgo saskarni. Veidojiet pielāgotas integrācijas un automatizējiet datu plūsmas visās sistēmās."
+    },
+    "compliance": {
+      "title": "Atbilstība un audita pēdas",
+      "description": "Sekojiet līdzi katrai darbībai ar visaptverošiem audita žurnāliem, kas parāda, kas ko un kad darīja. Nodrošiniet atbilstību ar automatizētām kontrolēm un reāllaika uzraudzību."
+    }
+  },
+  "solutions": {
+    "title": "Risinājumi katram uzņēmumam",
+    "byRole": "Pēc lomas",
+    "bySize": "Pēc uzņēmuma izmēra",
+    "accountants": {
+      "title": "Grāmatvežiem",
+      "description": "Pilna cikla automatizācija, inteliģenta datu ievade un atbilstības rīki"
+    },
+    "financeTeam": {
+      "title": "Finanšu komandai un vadībai",
+      "description": "Reāllaika ieskati, AI asistents un stratēģiskās informācijas paneļi"
+    },
+    "auditors": {
+      "title": "Auditoriem",
+      "description": "Pilni audita ceļi, atbilstības ziņošana un anomāliju atklāšana"
+    },
+    "smallCompany": {
+      "title": "Mazs uzņēmums",
+      "description": "Viss vienā grāmatvedības risinājums, kas aizstāj tradicionālās ERP sistēmas"
+    },
+    "mediumCompany": {
+      "title": "Vidējs uzņēmums",
+      "description": "Elastīga ieviešana - atsevišķa ERP vai netraucēta integrācija ar esošajām sistēmām"
+    },
+    "largeCompany": {
+      "title": "Liels uzņēmums",
+      "description": "Uzņēmuma klases mērogojamība ar uzlabotu drošību, vairāku entitāšu atbalstu un visaptverošām API integrācijām"
+    }
+  },
+  "cta": {
+    "title": "Vai esi gatavs pārveidot grāmatvedību?",
+    "description": "Pievienojieties tiem, kas jau taupa laiku un samazina kļūdas ar AI automatizētu grāmatvedību.",
+    "button": "Sākt bezmaksas izmēģinājumu"
+  },
+  "footer": {
+    "copyright": "© 2025 NumiFlow. Visas tiesības aizsargātas.",
+    "privacy": "Privātuma politika",
+    "terms": "Pakalpojuma noteikumi"
+  },
+  "onboarding": {
+    "title": "Vienkārša 2 nedēļu ieviešana",
+    "subtitle": "Ātri sāciet darbu ar mūsu strukturēto ieviešanas procesu",
+    "foundation": {
+      "title": "Pamatlīmenis (1. nedēļa)",
+      "items": [
+        "Augšupielādēt kontu plānu un sākuma bilances",
+        "Augšupielādēt piegādātājus un klientus",
+        "Iestatīt AI",
+        "Augšupielādēt līgumus un citus dokumentus",
+        "Iestatīt pielāgotu e-pasta adresi",
+        "Ielūgt komandas biedrus",
+        "Iestatīt nodokļu kodus"
+      ]
+    },
+    "validation": {
+      "title": "Validācija un palaišana (2. nedēļa)",
+      "items": [
+        "Konfigurēt apstiprinājumu darbplūsmas",
+        "Iestatīt rēķinu apstrādi",
+        "Iestatīt pielāgotās īpašības",
+        "Iestatīt darbplūsmas",
+        "Testēt darbplūsmas",
+        "Veikt testa konsolidācijas",
+        "Apmācīt operāciju komandu"
+      ]
+    }
+  }
+}

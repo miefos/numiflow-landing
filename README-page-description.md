@@ -40,6 +40,24 @@ Connect seamlessly with any ERP, HR system, or business application via our Open
 ### Compliance & Audit Trail
 Track every action with comprehensive audit logs showing who did what and when. Ensure compliance with automated controls and real-time monitoring. Generate audit-ready reports with complete transaction history.
 
+## Onboarding (2 weeks)
+Foundation (Week 1)
+* Upload CoA and starting balances
+* Upload vendors and customers
+* Setup AI
+* Upload contracts and other documents
+* Setup custom Email address
+* Invite teammates
+* Setup tax codes
+Validation & Launch (Week 2)
+* Configure approval workflows
+* Setup invoicing processing
+* Setup custom properties
+* Setup workflows
+* Test workflows
+* Run test consolidations
+* Train ops team
+
 # Metadata
 ## Description of landing page
 The landing page should be simple but stylish with neat animations. It is intended for accountants primarily so it should not be tech-savvy.

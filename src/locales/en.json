@@ -1,0 +1,224 @@
+{
+  "hero": {
+    "title": "AI Native Accounting",
+    "subtitle": "Effortless Automation, Seamless AI Assistance",
+    "description": "Automate your accounting and streamline your workflows with seamless AI-powered automation.",
+    "cta": "Get Started",
+    "learnMore": "Learn More"
+  },
+  "nav": {
+    "features": "Features",
+    "solutions": "Solutions",
+    "pricing": "Pricing",
+    "onboarding": "Onboarding",
+    "contact": "Contact"
+  },
+  "features": {
+    "title": "Powerful Features for Modern Accounting",
+    "automatedAccounting": {
+      "title": "Automated Accounting",
+      "description": "Save days of manual work every month with 90%+ of journal entries booked automatically. Extract data from invoices, create transactions, and reconcile accounts seamlessly."
+    },
+    "aiCopilot": {
+      "title": "AI Copilot",
+      "description": "Ask any question about your financial data using natural language. Generate custom reports, analyze trends, and get insights from your transactions and documents."
+    },
+    "accountsPayable": {
+      "title": "Accounts Payable Automation",
+      "description": "Process invoices via email, upload individually or in bulk - supporting all languages and formats. From scanned PDFs to eInvoices and PEPPOL."
+    },
+    "bankReconciliation": {
+      "title": "Bank Reconciliation",
+      "description": "Automatically match invoices to bank payments using intelligent pattern recognition. Achieve 95%+ automation in your reconciliation process."
+    },
+    "duplicateDetection": {
+      "title": "Duplicate & Anomaly Detection",
+      "description": "Protect your business with advanced pattern recognition that identifies duplicates and anomalies. Detect potential fraud and errors before they impact your financials."
+    },
+    "approvalWorkflows": {
+      "title": "Approval Workflows",
+      "description": "Design custom approval chains with multi-level authorization and role-based routing. Approve on-the-go with mobile support."
+    },
+    "accountsReceivable": {
+      "title": "Accounts Receivable Management",
+      "description": "Create professional invoices, automate payment reminders, and track outstanding balances. Set up recurring invoices with smart scheduling and payment tracking."
+    },
+    "insightsAnalytics": {
+      "title": "Insights & Analytics",
+      "description": "Get instant visibility into cash flow, expenses, and revenue trends with dynamic dashboards. Create automatic summaries and financial insights tailored to your business."
+    },
+    "documentManagement": {
+      "title": "Smart Document Management",
+      "description": "Upload and organize all business documents - contracts, receipts, bank statements, and more. Extract key information automatically and make everything searchable by content."
+    },
+    "periodClosing": {
+      "title": "Period Closing Automation",
+      "description": "Streamline month-end and year-end processes with automated checklists and workflows. Handle prepaid expenses, accruals, and deferred revenue with intelligent period allocation."
+    },
+    "apiIntegration": {
+      "title": "Enterprise API Integration",
+      "description": "Connect seamlessly with any ERP, HR system, or business application via our OpenAPI-compliant interface. Build custom integrations and automate data flows across your systems."
+    },
+    "compliance": {
+      "title": "Compliance & Audit Trail",
+      "description": "Track every action with comprehensive audit logs showing who did what and when. Ensure compliance with automated controls and real-time monitoring."
+    }
+  },
+  "solutions": {
+    "title": "Solutions for Every Business",
+    "byRole": "By Role",
+    "bySize": "By Company Size",
+    "accountants": {
+      "title": "Accountants",
+      "description": "End-to-end automation, intelligent data entry, and compliance tools"
+    },
+    "financeTeam": {
+      "title": "Finance Team & Executive Management",
+      "description": "Real-time insights, AI-powered Copilot, and strategic dashboards"
+    },
+    "auditors": {
+      "title": "Auditors",
+      "description": "Complete audit trails, compliance reporting, and anomaly detection"
+    },
+    "smallCompany": {
+      "title": "Small Company",
+      "description": "All-in-one accounting solution replacing traditional ERPs"
+    },
+    "mediumCompany": {
+      "title": "Medium Company",
+      "description": "Flexible deployment - standalone ERP or seamless integration with existing systems"
+    },
+    "largeCompany": {
+      "title": "Large Company",
+      "description": "Enterprise-grade scalability with advanced security, multi-entity support, and comprehensive API integrations"
+    }
+  },
+  "pricing": {
+    "title": "Simple, Transparent Pricing",
+    "subtitle": "Choose the perfect plan for your business size and needs",
+    "monthly": "Monthly",
+    "annually": "Annually",
+    "save": "Save 20%",
+    "starter": {
+      "name": "Starter",
+      "price": "$29",
+      "period": "/month",
+      "description": "Perfect for small businesses and freelancers",
+      "features": [
+        "Up to 100 transactions/month",
+        "Basic AI automation",
+        "Invoice processing",
+        "Bank reconciliation",
+        "Email support",
+        "Mobile app access"
+      ],
+      "cta": "Start Free Trial",
+      "popular": false
+    },
+    "professional": {
+      "name": "Professional",
+      "price": "$79",
+      "period": "/month",
+      "description": "Ideal for growing businesses with advanced needs",
+      "features": [
+        "Up to 1,000 transactions/month",
+        "Full AI Copilot access",
+        "Advanced analytics & insights",
+        "Custom approval workflows",
+        "Document management",
+        "API integrations",
+        "Priority support",
+        "Multi-user access"
+      ],
+      "cta": "Start Free Trial",
+      "popular": true
+    },
+    "enterprise": {
+      "name": "Enterprise",
+      "price": "Custom",
+      "period": "",
+      "description": "For large organizations with complex requirements",
+      "features": [
+        "Unlimited transactions",
+        "Advanced AI features",
+        "Multi-entity support",
+        "Custom integrations",
+        "Dedicated account manager",
+        "SLA guarantee",
+        "Advanced security",
+        "On-premise deployment"
+      ],
+      "cta": "Contact Sales",
+      "popular": false
+    }
+  },
+  "contact": {
+    "title": "Get Started Today",
+    "subtitle": "Ready to transform your accounting? Let's talk about your needs.",
+    "form": {
+      "name": "Full Name",
+      "email": "Email Address",
+      "company": "Company Name",
+      "employees": "Number of Employees",
+      "message": "Tell us about your accounting needs",
+      "submit": "Send Message",
+      "sending": "Sending...",
+      "success": "Thank you! We'll get back to you within 24 hours.",
+      "error": "Something went wrong. Please try again."
+    },
+    "employeeOptions": {
+      "1-10": "1-10 employees",
+      "11-50": "11-50 employees",
+      "51-200": "51-200 employees",
+      "200+": "200+ employees"
+    },
+    "info": {
+      "title": "Why Choose NumiFlow?",
+      "subtitle": "Join thousands of businesses already saving time and reducing errors",
+      "benefits": [
+        "90% reduction in manual accounting work",
+        "Setup in less than 1 hour",
+        "24/7 customer support",
+        "30-day money-back guarantee"
+      ]
+    }
+  },
+  "cta": {
+    "title": "Ready to Transform Your Accounting?",
+    "description": "Join thousands of businesses already saving time and reducing errors with AI-powered accounting automation.",
+    "button": "Start Free Trial"
+  },
+  "footer": {
+    "copyright": "© 2025 NumiFlow. All rights reserved.",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service"
+  },
+  "onboarding": {
+    "title": "Simple 2-Week Onboarding",
+    "subtitle": "Get up and running quickly with our structured onboarding process",
+    "foundation": {
+      "title": "Foundation (Week 1)",
+      "items": [
+        "Upload CoA and starting balances",
+        "Upload vendors and customers",
+        "Setup AI",
+        "Upload contracts and other documents",
+        "Setup custom Email address",
+        "Invite teammates",
+        "Setup tax codes"
+      ]
+    },
+    "validation": {
+      "title": "Validation & Launch (Week 2)",
+      "items": [
+        "Configure approval workflows",
+        "Setup invoicing processing",
+        "Setup custom properties",
+        "Setup workflows",
+        "Test workflows",
+        "Run test consolidations",
+        "Train ops team"
+      ]
+    }
+  }
+}

@@ -40,6 +40,9 @@ Connect seamlessly with any ERP, HR system, or business application via our Open
 ### Compliance & Audit Trail
 Track every action with comprehensive audit logs showing who did what and when. Ensure compliance with automated controls and real-time monitoring. Generate audit-ready reports with complete transaction history.
 
+### User Management and RBAC
+Granular role-based access control with customizable permissions. Manage user roles, departments, and access levels. Implement multi-factor authentication and session management. Secure your data with fine-grained access controls.
+
 ## Onboarding (2 weeks)
 Foundation (Week 1)
 * Upload CoA and starting balances
@@ -76,8 +79,9 @@ All-in-one accounting solution replacing traditional ERPs
 Flexible deployment - standalone ERP or seamless integration with existing systems
 
 ## Color Scheme
-7E2E84 Eminence
-EA638C Blush
-002A22 Dark Green
-75F4F4 Electric Blue
-90EOF3 Non Photo Blue
+#034C53
+#025c64
+#007074
+#F38C79
+#FFC1B4
+#fea897

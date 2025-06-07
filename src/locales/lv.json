@@ -62,6 +62,10 @@
     "compliance": {
       "title": "Atbilstība un audita pēdas",
       "description": "Sekojiet līdzi katrai darbībai ar visaptverošiem audita žurnāliem, kas parāda, kas ko un kad darīja. Nodrošiniet atbilstību ar automatizētām kontrolēm un reāllaika uzraudzību."
+    },
+    "userManagement": {
+      "title": "Lietotāju pārvaldība un RBAC",
+      "description": "Detalizēta piekļuves kontrole, balstīta uz lomām, ar pielāgojamām atļaujām. Pārvaldiet lietotāju lomas, nodaļas un piekļuves līmeņus. Ieviesiet divfaktoru autentifikāciju un sesiju pārvaldību."
     }
   },
   "solutions": {

@@ -15,6 +15,7 @@
   },
   "features": {
     "title": "Powerful Features for Modern Accounting",
+    "subtitle": "Automate your accounting and streamline your workflows with seamless AI-powered automation.",
     "automatedAccounting": {
       "title": "Automated Accounting",
       "description": "Save days of manual work every month with 90%+ of journal entries booked automatically. Extract data from invoices, create transactions, and reconcile accounts seamlessly."
@@ -62,6 +63,10 @@
     "compliance": {
       "title": "Compliance & Audit Trail",
       "description": "Track every action with comprehensive audit logs showing who did what and when. Ensure compliance with automated controls and real-time monitoring."
+    },
+    "userManagement": {
+      "title": "User Management & RBAC",
+      "description": "Granular role-based access control with customizable permissions. Manage user roles, departments, and access levels. Implement multi-factor authentication and session management."
     }
   },
   "solutions": {
@@ -93,65 +98,6 @@
       "description": "Enterprise-grade scalability with advanced security, multi-entity support, and comprehensive API integrations"
     }
   },
-  "pricing": {
-    "title": "Simple, Transparent Pricing",
-    "subtitle": "Choose the perfect plan for your business size and needs",
-    "monthly": "Monthly",
-    "annually": "Annually",
-    "save": "Save 20%",
-    "starter": {
-      "name": "Starter",
-      "price": "$29",
-      "period": "/month",
-      "description": "Perfect for small businesses and freelancers",
-      "features": [
-        "Up to 100 transactions/month",
-        "Basic AI automation",
-        "Invoice processing",
-        "Bank reconciliation",
-        "Email support",
-        "Mobile app access"
-      ],
-      "cta": "Start Free Trial",
-      "popular": false
-    },
-    "professional": {
-      "name": "Professional",
-      "price": "$79",
-      "period": "/month",
-      "description": "Ideal for growing businesses with advanced needs",
-      "features": [
-        "Up to 1,000 transactions/month",
-        "Full AI Copilot access",
-        "Advanced analytics & insights",
-        "Custom approval workflows",
-        "Document management",
-        "API integrations",
-        "Priority support",
-        "Multi-user access"
-      ],
-      "cta": "Start Free Trial",
-      "popular": true
-    },
-    "enterprise": {
-      "name": "Enterprise",
-      "price": "Custom",
-      "period": "",
-      "description": "For large organizations with complex requirements",
-      "features": [
-        "Unlimited transactions",
-        "Advanced AI features",
-        "Multi-entity support",
-        "Custom integrations",
-        "Dedicated account manager",
-        "SLA guarantee",
-        "Advanced security",
-        "On-premise deployment"
-      ],
-      "cta": "Contact Sales",
-      "popular": false
-    }
-  },
   "contact": {
     "title": "Get Started Today",
     "subtitle": "Ready to transform your accounting? Let's talk about your needs.",
@@ -163,7 +109,7 @@
       "message": "Tell us about your accounting needs",
       "submit": "Send Message",
       "sending": "Sending...",
-      "success": "Thank you! We'll get back to you within 24 hours.",
+      "success": "Thank you! We'll get back to you soon.",
       "error": "Something went wrong. Please try again."
     },
     "employeeOptions": {
@@ -174,19 +120,19 @@
     },
     "info": {
       "title": "Why Choose NumiFlow?",
-      "subtitle": "Join thousands of businesses already saving time and reducing errors",
+      "subtitle": "Get edge over your competitors with powerful AI-powered platform",
       "benefits": [
         "90% reduction in manual accounting work",
-        "Setup in less than 1 hour",
-        "24/7 customer support",
-        "30-day money-back guarantee"
+        "First value in 1-2 weeks",
+        "Excellent customer support",
+        "Trial period"
       ]
     }
   },
   "cta": {
     "title": "Ready to Transform Your Accounting?",
-    "description": "Join thousands of businesses already saving time and reducing errors with AI-powered accounting automation.",
-    "button": "Start Free Trial"
+    "description": "Get edge over your competitors with powerful AI-powered platform",
+    "button": "Schedule a demo"
   },
   "footer": {
     "copyright": "© 2025 NumiFlow. All rights reserved.",
@@ -194,30 +140,28 @@
     "terms": "Terms of Service"
   },
   "onboarding": {
-    "title": "Simple 2-Week Onboarding",
-    "subtitle": "Get up and running quickly with our structured onboarding process",
+    "title": "2-Week Onboarding",
+    "subtitle": "Get up and running quickly",
     "foundation": {
-      "title": "Foundation (Week 1)",
+      "title": "Setup - Week 1",
       "items": [
         "Upload CoA and starting balances",
-        "Upload vendors and customers",
+        "Upload Suppliers and Customers",
         "Setup AI",
-        "Upload contracts and other documents",
-        "Setup custom Email address",
-        "Invite teammates",
+        "Upload Contracts and other documents",
+        "Setup invoice email address",
+        "Invite team members",
         "Setup tax codes"
       ]
     },
     "validation": {
-      "title": "Validation & Launch (Week 2)",
+      "title": "Validation & Launch - Week 2",
       "items": [
         "Configure approval workflows",
-        "Setup invoicing processing",
+        "Setup invoice processing",
         "Setup custom properties",
         "Setup workflows",
-        "Test workflows",
-        "Run test consolidations",
-        "Train ops team"
+        "Configure other ad-hoc tasks"
       ]
     }
   }

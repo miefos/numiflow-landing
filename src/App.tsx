@@ -42,11 +42,13 @@ const Navigation: React.FC = () => {
     <nav className="navbar">
       <div className="container">
         <div className="nav-container">
-          <div className="logo">NumiFlow</div>
+          <div className="logo-container">
+            <div className="logo">NumiFlow</div>
+            <div className="logo-subtext">AI-powered accounting platform</div>
+          </div>
           <ul className="nav-menu">
             <li><a href="#features" className="nav-link">{t('nav.features')}</a></li>
             <li><a href="#solutions" className="nav-link">{t('nav.solutions')}</a></li>
-            <li><a href="#pricing" className="nav-link">{t('nav.pricing')}</a></li>
             <li><a href="#onboarding" className="nav-link">{t('nav.onboarding')}</a></li>
             <li><a href="#contact" className="nav-link">{t('nav.contact')}</a></li>
           </ul>
@@ -104,66 +106,158 @@ const FeaturesSection: React.FC = () => {
   const features = [
     {
       key: 'automatedAccounting',
-      icon: '🤖',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+        </svg>
+      ),
+      color: '#FF6B6B',
     },
     {
       key: 'aiCopilot',
-      icon: '💡',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm0 18a8 8 0 1 1 0-16 8 8 0 0 1 0 16z"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+      ),
+      color: '#4ECDC4',
     },
     {
       key: 'accountsPayable',
-      icon: '📄',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <path d="M14 2v6h6"/>
+          <path d="M16 13H8"/>
+          <path d="M16 17H8"/>
+          <path d="M10 9H8"/>
+        </svg>
+      ),
+      color: '#45B7D1',
     },
     {
       key: 'bankReconciliation',
-      icon: '🏦',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M3 6h18M3 12h18M3 18h18"/>
+          <path d="M21 6l-3 3-3-3"/>
+          <path d="M21 12l-3 3-3-3"/>
+          <path d="M21 18l-3 3-3-3"/>
+        </svg>
+      ),
+      color: '#96CEB4',
     },
     {
       key: 'duplicateDetection',
-      icon: '🔍',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+          <path d="M10 10l4 4"/>
+        </svg>
+      ),
+      color: '#FFEEAD',
     },
     {
       key: 'approvalWorkflows',
-      icon: '✅',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      ),
+      color: '#D4A5A5',
     },
     {
       key: 'accountsReceivable',
-      icon: '💳',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+        </svg>
+      ),
+      color: '#9B59B6',
     },
     {
       key: 'insightsAnalytics',
-      icon: '📊',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M3 3v18h18"/>
+          <path d="M18.7 8l-5.1 5.2-2.8-2.7L7 14.3"/>
+        </svg>
+      ),
+      color: '#3498DB',
     },
     {
       key: 'documentManagement',
-      icon: '📁',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <path d="M14 2v6h6"/>
+          <path d="M16 13H8"/>
+          <path d="M16 17H8"/>
+          <path d="M10 9H8"/>
+        </svg>
+      ),
+      color: '#2ECC71',
     },
     {
       key: 'periodClosing',
-      icon: '📅',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M19 4H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2z"/>
+          <path d="M16 2v4"/>
+          <path d="M8 2v4"/>
+          <path d="M3 10h18"/>
+        </svg>
+      ),
+      color: '#E67E22',
     },
     {
       key: 'apiIntegration',
-      icon: '🔗',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+          <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+        </svg>
+      ),
+      color: '#1ABC9C',
     },
     {
       key: 'compliance',
-      icon: '🛡️',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+        </svg>
+      ),
+      color: '#34495E',
+    },
+    {
+      key: 'userManagement',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+          <circle cx="12" cy="7" r="4"/>
+          <path d="M16 3.13a4 4 0 0 1 0 7.75"/>
+        </svg>
+      ),
+      color: '#7F8C8D',
     },
   ];
 
   return (
     <section id="features" className="features">
+      <div className="features-background" />
       <div className="container">
-        <motion.h2 
-          className="section-title"
+        <motion.div
+          className="features-header"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.8 }}
           viewport={{ once: true }}
         >
-          {t('features.title')}
-        </motion.h2>
+          <h2 className="section-title">{t('features.title')}</h2>
+          <p className="section-subtitle">{t('features.subtitle')}</p>
+        </motion.div>
+        
         <div className="features-grid">
           {features.map((feature, index) => (
             <motion.div
@@ -171,13 +265,31 @@ const FeaturesSection: React.FC = () => {
               className="feature-card"
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.05 }}
+              transition={{ 
+                duration: 0.6, 
+                delay: index * 0.05,
+                type: "spring",
+                stiffness: 100
+              }}
               viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
+              whileHover={{ 
+                scale: 1.03,
+                transition: { duration: 0.2 }
+              }}
             >
-              <div className="feature-icon">{feature.icon}</div>
-              <h3>{t(`features.${feature.key}.title`)}</h3>
-              <p>{t(`features.${feature.key}.description`)}</p>
+              <div 
+                className="feature-icon"
+                style={{ 
+                  backgroundColor: `${feature.color}15`,
+                  color: feature.color
+                }}
+              >
+                {feature.icon}
+              </div>
+              <div className="feature-content">
+                <h3>{t(`features.${feature.key}.title`)}</h3>
+                <p>{t(`features.${feature.key}.description`)}</p>
+              </div>
             </motion.div>
           ))}
         </div>
@@ -191,15 +303,60 @@ const SolutionsSection: React.FC = () => {
   const { t } = useTranslation();
 
   const rolesSolutions = [
-    { key: 'accountants', icon: '👨‍💼' },
-    { key: 'financeTeam', icon: '📊' },
-    { key: 'auditors', icon: '🔎' },
+    { 
+      key: 'accountants',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M9 17V7m0 10a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2h2a2 2 0 012 2m0 10a2 2 0 002 2h2a2 2 0 002-2M9 7a2 2 0 012-2h2a2 2 0 012 2m0 10V7m0 10a2 2 0 002 2h2a2 2 0 002-2V7a2 2 0 00-2-2h-2a2 2 0 00-2 2"/>
+        </svg>
+      )
+    },
+    { 
+      key: 'financeTeam',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <path d="M12 6v6l4 2"/>
+        </svg>
+      )
+    },
+    { 
+      key: 'auditors',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+          <path d="M12 8v4l3 3"/>
+        </svg>
+      )
+    },
   ];
 
   const sizeSolutions = [
-    { key: 'smallCompany', icon: '🏢' },
-    { key: 'mediumCompany', icon: '🏭' },
-    { key: 'largeCompany', icon: '🏬' },
+    { 
+      key: 'smallCompany',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M3 21h18M3 10h18M5 6l7-3 7 3M4 10v11m16-11v11M8 14v3m4-3v3m4-3v3"/>
+        </svg>
+      )
+    },
+    { 
+      key: 'mediumCompany',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+        </svg>
+      )
+    },
+    { 
+      key: 'largeCompany',
+      icon: (
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
+          <path d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0H5m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4"/>
+          <path d="M17 21v-2a4 4 0 00-4-4H7a4 4 0 00-4 4v2"/>
+        </svg>
+      )
+    },
   ];
 
   return (
@@ -216,7 +373,7 @@ const SolutionsSection: React.FC = () => {
         </motion.h2>
         
         <motion.h3 
-          style={{ textAlign: 'center', marginBottom: '1.5rem', fontSize: '1.75rem', color: 'var(--color-eminence)', fontWeight: '700' }}
+          style={{ textAlign: 'center', marginBottom: '1.5rem', fontSize: '1.75rem', color: 'var(--color-secondary)', fontWeight: '700' }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.2 }}
@@ -235,7 +392,7 @@ const SolutionsSection: React.FC = () => {
               viewport={{ once: true }}
               whileHover={{ scale: 1.03 }}
             >
-              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{solution.icon}</div>
+              <div className="solution-icon">{solution.icon}</div>
               <h3>{t(`solutions.${solution.key}.title`)}</h3>
               <p>{t(`solutions.${solution.key}.description`)}</p>
             </motion.div>
@@ -243,7 +400,7 @@ const SolutionsSection: React.FC = () => {
         </div>
 
         <motion.h3 
-          style={{ textAlign: 'center', margin: '4rem 0 1.5rem', fontSize: '1.75rem', color: 'var(--color-eminence)', fontWeight: '700' }}
+          style={{ textAlign: 'center', margin: '4rem 0 1.5rem', fontSize: '1.75rem', color: 'var(--color-secondary)', fontWeight: '700' }}
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.4 }}
@@ -262,106 +419,9 @@ const SolutionsSection: React.FC = () => {
               viewport={{ once: true }}
               whileHover={{ scale: 1.03 }}
             >
-              <div style={{ fontSize: '2.5rem', marginBottom: '1rem' }}>{solution.icon}</div>
+              <div className="solution-icon">{solution.icon}</div>
               <h3>{t(`solutions.${solution.key}.title`)}</h3>
               <p>{t(`solutions.${solution.key}.description`)}</p>
-            </motion.div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-};
-
-// Pricing section component
-const PricingSection: React.FC = () => {
-  const { t } = useTranslation();
-  const [isAnnual, setIsAnnual] = React.useState(true);
-
-  const plans = [
-    {
-      key: 'starter',
-      popular: false,
-    },
-    {
-      key: 'professional',
-      popular: true,
-    },
-    {
-      key: 'enterprise',
-      popular: false,
-    },
-  ];
-
-  return (
-    <section id="pricing" className="pricing">
-      <div className="container">
-        <motion.h2 
-          className="section-title"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
-          viewport={{ once: true }}
-        >
-          {t('pricing.title')}
-        </motion.h2>
-        <motion.p 
-          className="section-subtitle"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          {t('pricing.subtitle')}
-        </motion.p>
-
-        <div className="pricing-toggle">
-          <button 
-            className={!isAnnual ? 'active' : ''} 
-            onClick={() => setIsAnnual(false)}
-          >
-            {t('pricing.monthly')}
-          </button>
-          <button 
-            className={isAnnual ? 'active' : ''} 
-            onClick={() => setIsAnnual(true)}
-          >
-            {t('pricing.annually')}
-            <span className="save-badge">{t('pricing.save')}</span>
-          </button>
-        </div>
-
-        <div className="pricing-grid">
-          {plans.map((plan, index) => (
-            <motion.div
-              key={plan.key}
-              className={`pricing-card ${plan.popular ? 'popular' : ''}`}
-              initial={{ opacity: 0, y: 30 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: index * 0.1 }}
-              viewport={{ once: true }}
-              whileHover={{ scale: 1.02 }}
-            >
-              {plan.popular && <div className="popular-badge">{t('pricing.popular')}</div>}
-              <h3>{t(`pricing.${plan.key}.name`)}</h3>
-              <div className="price">
-                <span className="amount">{t(`pricing.${plan.key}.price`)}</span>
-                <span className="period">{t(`pricing.${plan.key}.period`)}</span>
-              </div>
-              <p className="description">{t(`pricing.${plan.key}.description`)}</p>
-              <ul className="features-list">
-                {(t(`pricing.${plan.key}.features`, { returnObjects: true }) as string[]).map((feature: string, i: number) => (
-                  <li key={i}>{feature}</li>
-                ))}
-              </ul>
-              <motion.a
-                href="#contact"
-                className="btn btn-primary"
-                whileHover={{ scale: 1.05 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                {t(`pricing.${plan.key}.cta`)}
-              </motion.a>
             </motion.div>
           ))}
         </div>
@@ -404,7 +464,12 @@ const OnboardingSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.3 }}
             viewport={{ once: true }}
           >
-            <h3>{t('onboarding.foundation.title')}</h3>
+            <div className="timeline-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="timeline-icon">
+                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+              </svg>
+              <h3>{t('onboarding.foundation.title')}</h3>
+            </div>
             <ul className="timeline-list">
               {(t('onboarding.foundation.items', { returnObjects: true }) as string[]).map((item, index) => (
                 <motion.li
@@ -413,7 +478,11 @@ const OnboardingSection: React.FC = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 * index }}
                   viewport={{ once: true }}
+                  className="timeline-item"
                 >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="timeline-check">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
                   {item}
                 </motion.li>
               ))}
@@ -427,7 +496,13 @@ const OnboardingSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             viewport={{ once: true }}
           >
-            <h3>{t('onboarding.validation.title')}</h3>
+            <div className="timeline-header">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="timeline-icon">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                <path d="M12 8v4l3 3"/>
+              </svg>
+              <h3>{t('onboarding.validation.title')}</h3>
+            </div>
             <ul className="timeline-list">
               {(t('onboarding.validation.items', { returnObjects: true }) as string[]).map((item, index) => (
                 <motion.li
@@ -436,7 +511,11 @@ const OnboardingSection: React.FC = () => {
                   whileInView={{ opacity: 1, x: 0 }}
                   transition={{ duration: 0.4, delay: 0.1 * index }}
                   viewport={{ once: true }}
+                  className="timeline-item"
                 >
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="timeline-check">
+                    <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                  </svg>
                   {item}
                 </motion.li>
               ))}
@@ -679,7 +758,6 @@ const LandingPage: React.FC = () => {
       <HeroSection />
       <FeaturesSection />
       <SolutionsSection />
-      <PricingSection />
       <OnboardingSection />
       <ContactSection />
       <CTASection />

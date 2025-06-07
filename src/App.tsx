@@ -43,8 +43,10 @@ const Navigation: React.FC = () => {
       <div className="container">
         <div className="nav-container">
           <div className="logo-container">
-            <div className="logo">NumiFlow</div>
-            <div className="logo-subtext">AI-powered accounting platform</div>
+            <a href="/" className="logo-link">
+              <div className="logo">NumiFlow</div>
+              <div className="logo-subtext">AI-powered accounting platform</div>
+            </a>
           </div>
           <ul className="nav-menu">
             <li><a href="#features" className="nav-link">{t('nav.features')}</a></li>
@@ -530,173 +532,26 @@ const OnboardingSection: React.FC = () => {
 // Contact section component
 const ContactSection: React.FC = () => {
   const { t } = useTranslation();
-  const [formData, setFormData] = React.useState({
-    name: '',
-    email: '',
-    company: '',
-    employees: '',
-    message: ''
-  });
-  const [isSubmitting, setIsSubmitting] = React.useState(false);
-  const [submitStatus, setSubmitStatus] = React.useState<'idle' | 'success' | 'error'>('idle');
-
-  const handleSubmit = async (e: React.FormEvent) => {
-    e.preventDefault();
-    setIsSubmitting(true);
-    setSubmitStatus('idle');
-
-    try {
-      // Here you would typically send the form data to your backend
-      await new Promise(resolve => setTimeout(resolve, 1000)); // Simulated API call
-      setSubmitStatus('success');
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        employees: '',
-        message: ''
-      });
-    } catch {
-      setSubmitStatus('error');
-    } finally {
-      setIsSubmitting(false);
-    }
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    const { name, value } = e.target;
-    setFormData(prev => ({ ...prev, [name]: value }));
-  };
 
   return (
     <section id="contact" className="contact">
       <div className="container">
-        <motion.h2 
-          className="section-title"
+        <motion.div 
+          className="contact-info"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6 }}
+          transition={{ duration: 0.6, delay: 0.3 }}
           viewport={{ once: true }}
+          style={{ textAlign: 'center' }}
         >
-          {t('contact.title')}
-        </motion.h2>
-        <motion.p 
-          className="section-subtitle"
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.6, delay: 0.2 }}
-          viewport={{ once: true }}
-        >
-          {t('contact.subtitle')}
-        </motion.p>
-
-        <div className="contact-container">
-          <motion.form 
-            className="contact-form"
-            onSubmit={handleSubmit}
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
-            viewport={{ once: true }}
-          >
-            <div className="form-group">
-              <input
-                type="text"
-                name="name"
-                value={formData.name}
-                onChange={handleChange}
-                placeholder={t('contact.form.name')}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="email"
-                name="email"
-                value={formData.email}
-                onChange={handleChange}
-                placeholder={t('contact.form.email')}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <input
-                type="text"
-                name="company"
-                value={formData.company}
-                onChange={handleChange}
-                placeholder={t('contact.form.company')}
-                required
-              />
-            </div>
-            <div className="form-group">
-              <select
-                name="employees"
-                value={formData.employees}
-                onChange={handleChange}
-                required
-              >
-                <option value="">{t('contact.form.employees')}</option>
-                <option value="1-10">{t('contact.employeeOptions.1-10')}</option>
-                <option value="11-50">{t('contact.employeeOptions.11-50')}</option>
-                <option value="51-200">{t('contact.employeeOptions.51-200')}</option>
-                <option value="200+">{t('contact.employeeOptions.200+')}</option>
-              </select>
-            </div>
-            <div className="form-group">
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleChange}
-                placeholder={t('contact.form.message')}
-                required
-              />
-            </div>
-            <motion.button
-              type="submit"
-              className="btn btn-primary"
-              disabled={isSubmitting}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              {isSubmitting ? t('contact.form.sending') : t('contact.form.submit')}
-            </motion.button>
-            {submitStatus === 'success' && (
-              <motion.p 
-                className="success-message"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-              >
-                {t('contact.form.success')}
-              </motion.p>
-            )}
-            {submitStatus === 'error' && (
-              <motion.p 
-                className="error-message"
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-              >
-                {t('contact.form.error')}
-              </motion.p>
-            )}
-          </motion.form>
-
-          <motion.div 
-            className="contact-info"
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
-            viewport={{ once: true }}
-          >
-            <h3>{t('contact.info.title')}</h3>
-            <p>{t('contact.info.subtitle')}</p>
-            <ul className="benefits-list">
-              {(t('contact.info.benefits', { returnObjects: true }) as string[]).map((benefit: string, index: number) => (
-                <li key={index}>{benefit}</li>
-              ))}
-            </ul>
-          </motion.div>
-        </div>
+          <h3>{t('contact.info.title')}</h3>
+          <p>{t('contact.info.subtitle')}</p>
+          <p style={{ fontSize: '1.2rem', marginTop: '1rem' }}>
+            <a href="mailto:support@numiflow.com" style={{ color: 'var(--color-primary)', textDecoration: 'none' }}>
+              support@numiflow.com
+            </a>
+          </p>
+        </motion.div>
       </div>
     </section>
   );
@@ -722,6 +577,7 @@ const CTASection: React.FC = () => {
             className="btn btn-cta"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
+            onClick={() => window.location.href = '#contact'}
           >
             {t('cta.button')}
           </motion.button>
@@ -789,6 +645,65 @@ const LanguageWrapper: React.FC = () => {
   return <LandingPage />;
 };
 
+// Privacy Policy component
+const PrivacyPolicy: React.FC = () => {
+  return (
+    <div className="legal-page">
+      <div className="container">
+        <h1>Privacy Policy</h1>
+        <div className="legal-content">
+          <h2>1. Information We Collect</h2>
+          <p>We collect information that you provide directly to us, including when you create an account, use our services, or contact us for support.</p>
+
+          <h2>2. How We Use Your Information</h2>
+          <p>We use the information we collect to provide, maintain, and improve our services, to develop new ones, and to protect NumiFlow and our users.</p>
+
+          <h2>3. Information Sharing</h2>
+          <p>We do not share your personal information with companies, organizations, or individuals outside of NumiFlow except in the following cases:</p>
+          <ul>
+            <li>With your consent</li>
+            <li>For legal reasons</li>
+            <li>With our service providers</li>
+          </ul>
+
+          <h2>4. Data Security</h2>
+          <p>We work hard to protect NumiFlow and our users from unauthorized access to or unauthorized alteration, disclosure, or destruction of information we hold.</p>
+
+          <h2>5. Your Rights</h2>
+          <p>You have the right to access, correct, or delete your personal information. You can also object to our processing of your personal information.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+// Terms of Service component
+const TermsOfService: React.FC = () => {
+  return (
+    <div className="legal-page">
+      <div className="container">
+        <h1>Terms of Service</h1>
+        <div className="legal-content">
+          <h2>1. Acceptance of Terms</h2>
+          <p>By accessing and using NumiFlow's services, you agree to be bound by these Terms of Service.</p>
+
+          <h2>2. Description of Service</h2>
+          <p>NumiFlow provides AI-powered accounting solutions and related services. We reserve the right to modify, suspend, or discontinue any aspect of the service at any time.</p>
+
+          <h2>3. User Responsibilities</h2>
+          <p>You are responsible for maintaining the confidentiality of your account and for all activities that occur under your account.</p>
+
+          <h2>4. Intellectual Property</h2>
+          <p>All content, features, and functionality of NumiFlow are owned by NumiFlow and are protected by international copyright, trademark, and other intellectual property laws.</p>
+
+          <h2>5. Limitation of Liability</h2>
+          <p>NumiFlow shall not be liable for any indirect, incidental, special, consequential, or punitive damages resulting from your use of or inability to use the service.</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
 // Main App component with routing
 const App: React.FC = () => {
   return (
@@ -796,6 +711,8 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/:lang" element={<LanguageWrapper />} />
         <Route path="/" element={<LanguageWrapper />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
       </Routes>
     </Router>
   );
